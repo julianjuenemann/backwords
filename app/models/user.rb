@@ -1,4 +1,8 @@
 class User < ActiveRecord::Base
+
+	has_many :decks
+
+
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
@@ -9,3 +13,4 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me
   # attr_accessible :title, :body
 end
+ 
